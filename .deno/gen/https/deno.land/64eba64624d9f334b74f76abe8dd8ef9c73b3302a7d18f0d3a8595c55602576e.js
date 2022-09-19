@@ -1,5 +1,5 @@
 /** @jsx h */ import { renderToString } from "preact-render-to-string";
-import { h, options } from "preact";
+import { options } from "preact";
 import { HEAD_CONTEXT } from "../runtime/head.ts";
 import { CSP_CONTEXT, nonce, NONE, UNSAFE_INLINE } from "../runtime/csp.ts";
 import { bundleAssetUrl } from "./constants.ts";

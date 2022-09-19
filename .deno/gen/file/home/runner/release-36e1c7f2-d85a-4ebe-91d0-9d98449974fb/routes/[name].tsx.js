@@ -1,4 +1,3 @@
-/** @jsx h */ import { h } from "preact";
 export default function Greet(props) {
     return /*#__PURE__*/ h("div", null, "Hello ", props.params.name);
 };

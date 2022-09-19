@@ -5,7 +5,7 @@
 /// <reference lib="deno.unstable" />
 import { start } from "$fresh/server.ts";
 import manifest from "./fresh.gen.ts";
-import { config, setup } from "@twind";
+import { config, setup } from "twind";
 import { virtualSheet } from "twind/sheets";
 const sheet = virtualSheet();
 sheet.reset();

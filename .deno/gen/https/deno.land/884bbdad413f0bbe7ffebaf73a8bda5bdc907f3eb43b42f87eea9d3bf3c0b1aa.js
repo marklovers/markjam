@@ -1,5 +1,4 @@
 import { extname, fromFileUrl, mediaTypeLookup, router, toFileUrl, walk } from "./deps.ts";
-import { h } from "preact";
 import { Bundler } from "./bundle.ts";
 import { ALIVE_URL, BUILD_ID, JS_PREFIX, REFRESH_JS_URL } from "./constants.ts";
 import DefaultErrorHandler from "./default_error_page.tsx";
