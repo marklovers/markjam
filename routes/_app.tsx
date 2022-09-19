@@ -6,6 +6,7 @@ export default function App(props: AppProps) {
         <>
             <Head>
                 <title>MarkJam</title>
+                <link rel="stylesheet" href="fonts/fonts.css" type="text/css" />
             </Head>
             <props.Component />
         </>

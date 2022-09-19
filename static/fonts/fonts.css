@@ -1,0 +1,6 @@
+@font-face {
+    font-family: "unscii";
+    font-weight: 500;
+    font-display: swap;
+    src: url("./unscii.woff") format('woff');
+}
