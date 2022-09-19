@@ -1,18 +1,13 @@
-import Counter from "../islands/Counter.tsx";
+import Nav from "../components/Nav.tsx";
 
 export default function Home() {
     return (
-        <div class="p-4 mx-auto max-w-screen-md">
-            <img
-                src="/logo.svg"
-                height="100px"
-                alt="the fresh logo: a sliced lemon dripping with juice"
-            />
-            <p class="my-6">
-                Welcome to `fresh`. Try update this message in the
-                ./routes/index.tsx file, and refresh.
-            </p>
-            <Counter start={3} />
+        <div class="w-screen h-screen bg-repeat bg-[#fbc0f3]" style="background-image: url('images/marksitos.png');">
+            <div class="p-4 mx-auto max-w-screen-lg bg-[#fcef8d]">
+                <Nav />
+
+                <img class="mx-auto" src="/images/Logo.png"></img>
+            </div>
         </div>
     );
 }
