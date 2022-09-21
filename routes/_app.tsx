@@ -6,6 +6,14 @@ export default function App(props: AppProps) {
         <>
             <Head>
                 <title>MarkJam</title>
+                <link rel="preload" href="fonts/fonts.css" as="style" />
+                <link
+                    rel="preload"
+                    href="fonts/unscii.woff"
+                    as="font"
+                    type="font/woff"
+                    crossorigin
+                />
                 <link rel="stylesheet" href="fonts/fonts.css" type="text/css" />
             </Head>
             <props.Component />

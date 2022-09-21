@@ -1,27 +1,28 @@
-import { Component } from "preact";
+import { useState } from "preact/hooks";
 
-export default class Nav extends Component {
-    state = {
-        activeTab: 0,
-    };
+interface NavProps {
+    tabHighlight: number;
+}
 
-    render() {
-        return (
-            <nav class="h-fit p-5 grid grid-cols-1 grid-rows-2 items-center font-unscii bg-[#fcef8d] md:grid-cols-2 md:grid-rows-1 mb-4">
-                <img class="inline-block h-10 mx-auto md:mx-0" src="images/Logo.png"></img>
+export default function Nav(props: NavProps) {
+    const [tab, setTab] = useState(props.tabHighlight);
 
-                <ul class="flex flex-row justify-center inline-block md:justify-around">
-                    <li class="text-lg text-bold mx-2">
-                        <a href="/">Home</a>
-                    </li>
-                    <li class="text-lg text-bold mx-2">
-                        <a href="/jams">Jams</a>
-                    </li>
-                    <li class="text-lg text-bold mx-2">
-                        <a href="/winners">Winners</a>
-                    </li>
-                </ul>
-            </nav>
-        );
-    }
+    return (
+        <nav class="flex flex-col justify-center h-fit p-5 font-unscii">
+            <img class="mx-auto mb-2" src="/images/Logo.png" alt="MarkJam">
+            </img>
+
+            <ul class="flex flex-row justify-center">
+                <li class="text-lg text-bold mx-2 inline">
+                    <a href="/">Home</a>
+                </li>
+                <li class="text-lg text-bold mx-2 inline">
+                    <a href="/jams">Jams</a>
+                </li>
+                <li class="text-lg text-bold mx-2 inline">
+                    <a href="/winners">Winners</a>
+                </li>
+            </ul>
+        </nav>
+    );
 }

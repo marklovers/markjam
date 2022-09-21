@@ -9,7 +9,7 @@ export default {
         extend: {
             backgroundImage: {
                 "mark-pattern": "url('/images/marksitos.png')",
-            }
+            },
         },
     },
 } as Options;
