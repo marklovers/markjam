@@ -9,10 +9,11 @@ export default function Nav(props: NavProps) {
 
     return (
         <nav class="flex flex-col justify-center h-fit p-5 font-unscii">
-            <img class="mx-auto mb-2" src="/images/Logo.png" alt="MarkJam">
+            <img class="mx-auto mb-2" src="/images/logo.gif" alt="MarkJam">
             </img>
 
-            <ul class="flex flex-row justify-center">
+            {
+                /* <ul class="flex flex-row justify-center">
                 <li class="text-lg text-bold mx-2 inline">
                     <a href="/">Home</a>
                 </li>
@@ -22,7 +23,8 @@ export default function Nav(props: NavProps) {
                 <li class="text-lg text-bold mx-2 inline">
                     <a href="/winners">Winners</a>
                 </li>
-            </ul>
+            </ul> */
+            }
         </nav>
     );
 }

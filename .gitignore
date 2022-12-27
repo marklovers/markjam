@@ -1,1 +1,3 @@
 .deno/**
+.vscode/**
+deno.lock

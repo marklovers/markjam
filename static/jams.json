@@ -2,26 +2,31 @@
     {
         "title": "MarkJam #1",
         "theme": "Mark",
+        "number": 1,
         "url": "https://itch.io/jam/mark-jam"
     },
     {
         "title": "MarkJam #2",
         "theme": "Space",
+        "number": 2,
         "url": "https://itch.io/jam/mark-jam-2"
     },
     {
         "title": "MarkJam #3",
         "theme": "Jam",
+        "number": 3,
         "url": "https://itch.io/jam/mark-jam-2"
     },
     {
         "title": "MarkJam #4",
         "theme": "Sword",
+        "number": 4,
         "url": "https://itch.io/jam/mark-jam-2"
     },
     {
         "title": "MarkJam #5",
         "theme": "Eat",
+        "number": 5,
         "url": "https://itch.io/jam/mark-jam-2"
     }
 ]

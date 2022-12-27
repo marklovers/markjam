@@ -1,7 +1,7 @@
-export default function Page(props: JamProps) {
+export default function Page(props) {
     return (
-        <div class="w-screen h-screen bg-repeat bg-[#fbc0f3] bg-mark-pattern text-[#1f102a] font-unscii">
-            <div class="px-4 max-w-screen-lg h-screen overflow-auto bg-[#edb2d7] md:mx-auto">
+        <div class="w-screen h-screen bg-[#E98EAD] font-gantari">
+            <div class="px-4 max-w-screen-lg h-screen overflow-auto bg-[#FEA1BF] md:mx-auto">
                 {props.children}
             </div>
         </div>

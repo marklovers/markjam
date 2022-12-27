@@ -5,7 +5,8 @@
     "importMap": "./import_map.json",
     "compilerOptions": {
         "jsx": "react-jsx",
-        "jsxImportSource": "preact"
+        "jsxImportSource": "preact",
+        "noImplicitAny": false
     },
     "fmt": {
         "files": {

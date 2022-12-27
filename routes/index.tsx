@@ -1,32 +1,43 @@
-import Page from "../components/Page.tsx";
+import { Handlers, PageProps } from "$fresh/server.ts";
 import Nav from "../components/Nav.tsx";
+import Page from "../components/Page.tsx";
+import Text from "../components/Text.tsx";
+import Jam from "../components/Jam.tsx";
 
-export default function Home() {
+export const handler: Handlers = {
+    async GET(_, ctx) {
+        const json =
+            await (await fetch("https://markjam.kaboomjs.com/jams.json"))
+                .json();
+
+        return ctx.render(json.map((jam) => {
+            return (
+                <Jam
+                    title={jam.title}
+                    theme={jam.theme}
+                    url={jam.url}
+                    number={jam.number}
+                />
+            );
+        }));
+    },
+};
+
+export default function Home(props: PageProps) {
     return (
         <Page>
             <Nav tabHighlight={1} />
 
-            <p class="text-center p-8">
-                MarkJam it's a jam about make games with Mark. Yes, the famous
-                Kaboom character
-            </p>
+            <Text size="normal" center>
+                <strong>{"MarkJam "}</strong>it's a recurrently Game Jam, where
+                you will make games with Mark. And you will ask, who is Mark?
+                Well...
+            </Text>
 
-            <img class="mx-auto mb-6" src="images/markdefault.png" />
+            <br />
 
-            <div class="inline-flex w-full justify-center flex-col text-[#fff] md:flex-row">
-                <a
-                    class="bg-[#5865F2] h-fit px-4 py-3 mx-4 rounded my-2"
-                    href="https://kaboomjs.com/discord"
-                >
-                    Join Discord
-                </a>
-
-                <a
-                    class="bg-[#fa5c5c] h-fit px-4 py-3 mx-4 rounded my-2"
-                    href="https://itch.io/jam/markjam-5"
-                >
-                    Jam on Itch
-                </a>
+            <div class="flex flex-row gap-2 justify-center align-items-center">
+                {props.data}
             </div>
         </Page>
     );

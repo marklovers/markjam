@@ -5,6 +5,7 @@ export default {
     theme: {
         fontFamily: {
             unscii: ["unscii", "serif"],
+            gantari: ["Gantari", "serif"],
         },
         extend: {
             backgroundImage: {
