@@ -8,15 +8,18 @@ interface JamProps {
 }
 
 export default function Jam(props: JamProps) {
-    console.log(props);
     return (
-        <div class="h-[300px] w-[140px] p-4 bg-[#E98EAD] rounded">
-            <a href={props.url} target="_blank">
+        <a
+            class="transition ease-in-out delay-50 hover:-translate-y-2"
+            href={props.url}
+            target="_blank"
+        >
+            <div class="h-[300px] w-[140px] p-4 bg-[#E98EAD] rounded">
                 <Text font="unscii" size="huge" center>
                     {"#" + (props.number ?? "1")}
                 </Text>
                 <Text font="unscii" size="small" center>{props.theme}</Text>
-            </a>
-        </div>
+            </div>
+        </a>
     );
 }
