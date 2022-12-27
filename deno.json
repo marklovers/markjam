@@ -8,6 +8,13 @@
         "jsxImportSource": "preact",
         "noImplicitAny": false
     },
+    "lint": {
+        "rules": {
+            "exclude": [
+                "no-explicit-any"
+            ]
+        }
+    },
     "fmt": {
         "files": {
             "exclude": [".deno"]

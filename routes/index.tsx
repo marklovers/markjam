@@ -3,6 +3,7 @@ import Nav from "../components/Nav.tsx";
 import Page from "../components/Page.tsx";
 import Text from "../components/Text.tsx";
 import Jam from "../components/Jam.tsx";
+import Jams from "../components/Jams.tsx";
 
 export const handler: Handlers = {
     async GET(_, ctx) {
@@ -36,9 +37,7 @@ export default function Home(props: PageProps) {
 
             <br />
 
-            <div class="flex flex-row gap-2 justify-center align-items-center">
-                {props.data}
-            </div>
+            <Jams data={props.data} />
         </Page>
     );
 }
